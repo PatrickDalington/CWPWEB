@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CWP</title>
+        <link rel="stylesheet" href="style.css">
+
+    
+    </head>
+    <body>
+        <ul id="nav_list">
+            <li><a href="#nav_list">Home</a></li>
+            <li><a href="#item_2">Courses</a></li>
+            <li><a href="#item_3">Instructors</a></li>
+            <li><a href="#item_4">Forum</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+
+        
+        <table id="home_bk_layout">
+            
+            <td id="home_bg">
+                <p style="font-size: 90px; margin-top:0;">
+                   <span style="color: aquamarine;"> WELCOME </span> <span style="color: rgb(70, 218, 107);">TO </span><mark style="padding: 10px; background-color: rgb(2, 29, 70); color: white;">CWP ACADEMY</mark>
+                </p>
+            </td>
+            <td id="home_bg">
+                <img style="height:500px; width:500px; margin-left: 0; margin-top: 0;" src="media/female_programmer.jpg" alt="Image">
+            </td>
+        </table>
+
+
+        <table id="homepage_items_tb">
+            <tr id="item_1">
+                <td>
+                    <h1 style="font-size:60px; color:rgb(255, 255, 255); margin-right:auto; margin-left:auto; display:block; text-align: center;">
+                        What's Your Level In Programming?
+                    </h1>
+                    <p style="text-align:center; font-family:'Gill Sans'; padding: left 40px; font-size:30px;">
+                        Try the game below!
+                    </p>
+                     
+                    
+                    <table id="instruction_table" >
+                        <tr>
+                            <th id="instruction_th_1">
+                                <h3 style="color: rgb(237, 234, 234);">Memories</h3>
+                                <p style="color: rgb(159, 149, 149);">Momories brings back memories bring back you.</p>
+                            </th>
+                            
+                        </tr>
+                        <tr id="instruction_th_2">
+                            <td id="game_instruction">
+                                <h3 style="text-align: center; color: green;"><u>Instruction</u></h3>
+                                <p style="text-align: center;">
+                                    Below is an image containing different programming languages<br>
+                                    Identify python logo and click on it 5 times as fast as you can.
+                                </p>
+
+                                <img id="game_python_image" src="media/python.png">
+                                 <!-- mapping images to be clickable according to nodes positioning-->
+                                <map name="programs">
+                                    <area shape="circle" coords="34,47,270,355" alt="python_logo" onclick="buttonClicked()">
+                                </map>
+                            </td>
+                        </tr>
+                
+                    </table>
+                </td>
+            </tr>
+
+            <tr id="item_2">
+                <td>
+                    
+        <h1 style="margin-bottom: 0px; margin-top: 60px; font-size:80px; color:rgb(255, 255, 255); margin-right:auto; margin-left:auto; display:block; text-align: center;">
+            Available Courses
+        </h1>
+
+    <table id="image_views_tb">
+        <tr>
+            <td class="intro_python">
+                <h1 class="courses_header">Introduction To Python</h1>
+                <img id="python" src="media/python.png" style="width: fit-content; height: 200px; margin-top: 0px; padding-top: 0px;">
+                <p class="courses_text">
+                    <span>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+                        llege in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going 
+                        through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                    </span>
+                </p>
+                <button class="courses_button">
+                    Check-out
+                </button>
+            </td>
+            
+
+            <td>
+                <h1 class="courses_header">Introduction To Java</h1>
+                <img id="java" src="media/java.jpg" style="width: fit-content;">
+                <p class="courses_text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                   
+                </p>
+                <button class="courses_button">
+                    Check-out
+                </button>
+            </td>
+
+
+            <td>
+                <h1 class="courses_header">Introduction To Machine Learning</h1>
+                <img id="java" src="media/ml.jpg" style="width: fit-content; margin-top: 0px;">
+                <p class="courses_text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                    College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going 
+                
+                </p>
+                <button class="courses_button">
+                    Check-out
+                </button>
+            </td>
+
+        </tr>
+    </table>
+                </td>
+            </tr>
+
+            <tr id="item_3">
+                <table id="instructors_table" style="border-style: ridge;border-radius: 10px; padding-top: 10px; border-spacing: 60px; margin-bottom: 10px; margin-top: 10px;">
+                    <tr>
+                        <th colspan="4"><p1 style="font-size: 100px; color: aliceblue;">Meet Our Instructors</p1></th>
+                    </tr>
+                    <tr id="instructors_r1">
+                        <td style="height: 200px; width: 400px; border-spacing: 20px; background-color: black;">
+                            <img src="media/instructor1.jpg" style="height: 200px; width: 200px; display: block; margin-right: auto; margin-left: auto; ">
+                            <h4 style="color: green; margin-left:20px; margin-bottom:5px;">Buja Eyis Jnr- </h3>
+                                <h4 style="color:aqua; padding-top:0%; margin-bottom:5px; margin-top:0%; margin-left:20px;">(Mobile App Developer)</h4>
+                            <p style="color: azure; font-size:15px; margin-top:0%">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+                                Latin literature from 45 BC
+                            </p>
+        
+                        </td>
+        
+                        <td style="height: 200px; width: 400px; border-spacing: 20px; background-color: black;">
+                            <img src="media/instructor2.jpg" style="height: 200px; width: 200px; display: block; margin-right: auto; margin-left: auto; ">
+                            <h4 style="color: green; margin-left:20px; margin-bottom:5px;">Raji Yansh- </h3>
+                                <h4 style="color:aqua; padding-top:0%; margin-bottom:5px; margin-top:0%; margin-left:20px;">(Fullstack Web Deveeloper)</h4>
+                            <p style="color: azure; font-size:15px; margin-top:0%">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+                                Latin literature from 45 BC
+                            </p>
+        
+                        </td>
+        
+                        <td style="height: 200px; width: 400px; border-spacing: 20px; background-color: black;">
+                            <img src="media/instructor3.jpg" style="height: 200px; width: 200px; display: block; margin-right: auto; margin-left: auto; ">
+                            <h4 style="color: green; margin-left:20px; margin-bottom:5px;">Bolu Oladimeji- </h3>
+                                <h4 style="color:aqua; padding-top:0%; margin-bottom:5px; margin-top:0%; margin-left:20px;">(Machine Learning Expact)</h4>
+                            <p style="color: azure; font-size:15px; margin-top:0%">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+                                Latin literature from 45 BC
+                            </p>
+        
+                        </td>
+        
+                        <td style="height: 200px; width: 400px; border-spacing: 20px; background-color: black;">
+                            <img src="media/instructor4.jpg" style="height: 200px; width: 200px; display: block; margin-right: auto; margin-left: auto; ">
+                            <h4 style="color: green; margin-left:20px; margin-bottom:5px;">Donald Boney- </h3>
+                                <h4 style="color:aqua; padding-top:0%; margin-bottom:5px; margin-top:0%; margin-left:20px;">(Data Scientist)</h4>
+                            <p style="color: azure; font-size:15px; margin-top:0%">
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+                                Latin literature from 45 BC
+                            </p>
+        
+                        </td>
+                    </tr>
+        
+                </table>
+            </tr>
+
+
+            <tr id="item_4">
+                <table id="gallery_images">
+                   
+                    <tr>
+                        <th colspan="3"><p1 style="font-size: 100px; color: aliceblue;">Student Forum</p1></th>
+                    </tr>
+                    <tr>
+                        <td rowspan="3" style="background-color: rgba(239, 238, 238, 0.589);">
+                            <p style="font-family: 'Trebuchet MS'; font-size: 90px; color: white; text-align: center;">
+                                JOIN US NOW
+                            </p>
+                            
+                        </td>
+                        <td rowspan="2">
+                            <img id="game_python_imag" src="media/students2.jpg" style="width: 600px">
+                        </td>
+                        <td>
+                            <img id="game_python_imag" src="media/students1.jpg" style="width: 300px; margin-bottom: 0px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="game_python_imag" src="media/studet3.jpg" style="width: 300px">
+                        </td>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+
+
+        <!-- Test your knowledge page-->
+
+
+    
+        
+        
+        
+       
+    
+    
+       
+    
+        <script>
+        var x = 0;
+        function buttonClicked()
+        {
+            x++;
+            alert("Python Logo Clicked "+ x + " times");
+        }
+        </script>
+    </body>
+</html>

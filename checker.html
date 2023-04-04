@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkers</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <style>
+        body{
+            background-image: url('backdroppp.jpg');
+	        background-repeat: no-repeat;
+	        background-attachment: fixed;
+	        background-size: cover;
+        }
+
+        h1{
+            color: rgb(183, 183, 8);
+            margin-top: 0px;
+            padding-top: 0%;
+        }
+        p{
+            color: rgb(240, 239, 239);
+        }
+
+        table td{
+            background-color: rgb(0, 0, 0);
+            padding: 14px;
+            width: 300px;
+            height: fit-content;
+            border: 1px solid green;
+            border-radius: 10px;
+            border-style: ridge;
+        }
+
+        tr{
+            padding:8px;
+        }
+
+        #instruction_table{
+	    width: 1000px; 
+	display:block; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+#instruction_th_1{
+	align-content: center; 
+	height: 500; 
+	width: 1000px; 
+	background-color: aqua; 
+	align-items: center;
+}
+
+#instruction_th_2{
+	align-content: center; 
+    height: 100px; 
+	width: 1000px; 
+	background-color: rgba(0, 0, 0, 0.617); 
+	align-items: center;
+}
+#game_instruction{
+    background-color: rgba(0, 0, 0, 0.605);
+}
+
+#game_python_image{
+	width: 65%;
+	display:block; 
+	margin-left:auto; 
+	margin-right:auto;
+	margin-top: 20px;
+}
+
+#table_text{
+    color: gray;
+}
+
+#image_views_tb{
+	width: fit-content; 
+    height: fit-content;
+	display:block; 
+    border-spacing: 40px;
+    border-width: 2px;
+    border-color: rgb(38, 75, 2);
+	margin-left:auto; 
+	margin-right:auto;
+    
+}
+
+    </style>
+</head>
+
+<body>
+    <h1 style="font-size:60px; color:burlywood; margin-right:auto; margin-left:auto; display:block; text-align: center;">
+        What's Your Level In Programming?
+    </h1>
+    <p style="text-align:center; font-family:'Gill Sans'; padding: left 40px; font-size:30px;">Lets know how much you already know how to code</p>
+     
+    
+    <table id="instruction_table" >
+        <tr>
+            <th id="instruction_th_1">
+                <h3 style="color: black;">Memories</h3>
+                <p style="color: black;">Momories brings back memories bring back you.</p>
+            </th>
+            
+        </tr>
+        <tr id="instruction_th_2">
+            <td id="game_instruction">
+                <h3 style="text-align: center; color: green;"><u>Instruction</u></h3>
+                <p style="text-align: center;">
+                    Below is an image containing different programming languages<br>
+                    Identify python logo and click on it 5 times as fast as you can.
+                </p>
+            </td>
+        </tr>
+            
+
+    </table>
+
+    
+    <img id="game_python_image" src="python.png">
+    
+    <!-- mapping images to be clickable according to nodes positioning-->
+    <map name="programs">
+        <area shape="circle" coords="34,47,270,355" alt="python_logo" onclick="buttonClicked()">
+    </map>
+
+
+    <h1 style="margin-bottom: 0px; margin-top: 60px; font-size:80px; color:rgb(8, 188, 185); margin-right:auto; margin-left:auto; display:block; text-align: center;">
+            Available Courses
+    </h1>
+
+    <table id="image_views_tb">
+        <tr>
+            <td>
+                <h1>Introduction To Python</h1>
+                <img id="python" src="python.png" style="width: fit-content; height: 200px; margin-top: 0px; padding-top: 0px;">
+                <p id="table_text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+		            llege in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going 
+		            through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                </p>
+                <button style="display: block; width:350px; height: 50px; margin-bottom: 0px; padding-bottom: 0px;">
+                    Check-out
+                </button>
+            </td>
+            
+
+            <td>
+                <h1>Introduction To Java</h1>
+                <img id="java" src="java.jpg" style="width: fit-content;">
+                <p id="table_text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+		            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+		            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going 
+		            through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+		            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
+		            This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+		            comes from a line in section 1.10.32.
+                </p>
+                <button style="display: block; width:350px; height: 50px;">
+                    Check-out
+                </button>
+            </td>
+
+
+            <td>
+                <h1>Introduction To Machine Learning</h1>
+                <img id="java" src="ml.jpg" style="width: fit-content; margin-top: 0px;">
+                <p id="table_text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical 
+		            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+		            College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going 
+		            through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+		            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
+		            This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+		            comes from a line in section 1.10.32.
+                </p>
+                <button style="display: block; width:350px; height: 50px;">
+                    Check-out
+                </button>
+            </td>
+
+        </tr>
+    </table>
+   
+
+    <script>
+    var x = 0;
+    function buttonClicked()
+    {
+        x++;
+        alert("Python Logo Clicked "+ x + " times");
+    }
+    </script>
+</body>
+
+
+</html>
